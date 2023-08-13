@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/textView6" android:background="@drawable/quizzleing_name_level" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="45dp" android:text="@string/enchanted_tree" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fruitLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp" android:layout_below="@+id/textView6" android:layout_marginStart="20dp" android:layout_alignParentStart="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-35dp" android:src="@drawable/__leaf_cost" app:layout_constraintBottom_toTopOf="@+id/fruit" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+            <ImageView android:id="@+id/fruit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quizzlewood_quizzlefruit_icon" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-38dp" android:src="@drawable/quizzle_fruit_tree_sign"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/spinLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp" android:layout_below="@+id/textView6" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-22dp" android:src="@drawable/__leaf_cost2" app:layout_constraintBottom_toTopOf="@+id/spin" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+            <ImageView android:id="@+id/spin" android:layout_width="111dp" android:layout_height="98dp" android:src="@drawable/quizzlewood_spin_icon" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-33dp" android:src="@drawable/quizzlespin_tree_sign" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/fruitLayout" android:layout_marginStart="20dp" android:layout_alignParentStart="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/chest" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="24dp" android:src="@drawable/quizzlewood_chest_1" android:layout_marginStart="12dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/imageView5"/>
+            <ImageView android:layout_gravity="bottom|center_horizontal" android:id="@+id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/leafcost1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.494" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/quizzlechest_tree_sign" android:layout_marginStart="-40dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/diceLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/spinLayout" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/leafcost2"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-30dp">
+            <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quizzledice_tree_sign" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <ImageView android:id="@+id/dice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@drawable/quizzlewood_dice_icon" android:scaleType="centerCrop" android:layout_marginEnd="28dp" app:layout_constraintEnd_toEndOf="@+id/imageView4" app:layout_constraintTop_toTopOf="@+id/imageView4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>

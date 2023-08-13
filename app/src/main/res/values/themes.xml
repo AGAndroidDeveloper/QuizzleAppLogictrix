@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.QuizApp" parent="Base.Theme.QuizApp" />
+    <style name="myTextStyle">
+
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:spacing">.01dp</item>
+<item name="android:gravity">center</item>
+        <item name="android:background">@drawable/transparentbackground1</item>
+
+
+    </style>
+    <style name="myEditTextStyle">
+<item name="android:textColor">#FFB84C</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:spacing">.01dp</item>
+<item name="android:gravity">center</item>
+       <item name="hintTextColor">#FFB84C</item>
+        <item name="android:textColorHint">#FFB84C</item>
+<item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/quizzling_name_field</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="myEditTextStyleMenu">
+<item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:spacing">.01dp</item>
+<item name="android:gravity">center</item>
+
+<item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/green_button_medium</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+    <style name="myTextStyle1">
+
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:spacing">.01dp</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+</resources>

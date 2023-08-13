@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name" translatable="false">quizApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="on" translatable="false">ON</string>
+    <string name="off" translatable="false">Off</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="subject" translatable="false">Subject</string>
+    <string name="type_your_message_here">Type your message here....</string>
+    <string name="ok_">OK</string>
+    <string name="have_your_say">HAVE YOUR SAY!</string>
+    <string name="music">Music</string>
+    <string name="sfx">SFX</string>
+    <string name="on_">On</string>
+    <string name="off_">Off</string>
+    <string name="active">Active</string>
+    <string name="subscription">Subscription</string>
+    <string name="ankitlogic_gmail_com">ankitlogic@gmail.com</string>
+    <string name="_2314_4324_0989">2314 4324 0989</string>
+    <string name="hidePassword">**********</string>
+    <string name="_07_06_2023">07/06/2023</string>
+    <string name="danthedestroyer">DanTheDestroyer</string>
+    <string name="details">Details</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="textview">TextView</string>
+    <string name="what_s_new_amp_coming_here"><![CDATA[What\'s New & Coming Here]]></string>
+    <string name="news_tittle_here">News Tittle Here</string>
+    <string name="dathedestroyer">DanTheDestroyer</string>
+    <string name="thelittledestroyer">TheLittleDestroyer</string>
+    <string name="_132">132</string>
+    <string name="answered">Answered</string>
+    <string name="questions">Questions</string>
+    <string name="quizzler_nickname">Quizzler Nickname</string>
+    <string name="sound">Sound</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="level">Level</string>
+    <string name="_2">2</string>
+    <string name="danthedestroyer_">DanTheDestroyer</string>
+    <string name="quizzling">Quizzling</string>
+    <string name="quizzler_nickname_">Quizzler Nickname</string>
+    <string name="thelittledeatroyer">TheLittleDeatroyer</string>
+    <string name="level_">Level</string>
+    <string name="_5">5</string>
+    <string name="what_i_ve_been_through">What I\'ve Been Through</string>
+    <string name="sign_up_today_and_receive_your_free_bonus">Sign-up today and receive Your FREE bonus</string>
+    <string name="my_account">My Account</string>
+    <string name="statistics">Statistics</string>
+    <string name="news_amp_events"><![CDATA[News & Events]]></string>
+    <string name="feedback">Feedback</string>
+    <string name="help_amp_guides"><![CDATA[Help & Guides]]></string>
+    <string name="sign_out">Sign Out</string>
+    <string name="_100">100</string>
+    <string name="_25">25</string>
+    <string name="buy0">BUY\n</string>
+    <string name="buy">BUY\n</string>
+    <string name="question_master">Question Master</string>
+    <string name="_12h_34mm">12h:34m\n</string>
+    <string name="enchanted_tree">Enchanted Tree\n</string>
+    <string name="_10000">10000</string>
+    <string-array name="programming_languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>CPP</item>
+        <item>Android Studio</item>
+        <item>DSA</item>
+    </string-array>
+</resources>

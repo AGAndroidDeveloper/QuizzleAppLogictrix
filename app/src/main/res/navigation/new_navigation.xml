@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/quizzleWoodtreefrag">
+
+
+    <fragment
+        android:id="@+id/quizzleWoodgame4"
+        android:name="com.example.quizapp.section8.game.QuizzleWoodgame4"
+        android:label="QuizzleWoodgame4"
+        tools:layout="@layout/fragment_quizzle_woodgame4"/>
+    <fragment
+        android:id="@+id/quizzleWoodtreefrag"
+        android:name="com.example.quizapp.section8.QuizzleWoodtreefrag"
+        android:label="QuizzleWoodtreefrag"
+        tools:layout="@layout/fragment_quizzle_wood">
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodchest"
+            app:destination="@id/quizzleWoodgame1" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodfruit"
+            app:destination="@id/quizzleWoodgame4" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodSpin"
+            app:destination="@id/quizzleWoodgame3" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWooddice"
+            app:destination="@id/quizzleWoodgame2" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleBonus"
+            app:destination="@id/quizzleBonus" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodAwards"
+            app:destination="@id/quizzleWoodAwards" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_fragmentQuizzleHome"
+            app:destination="@id/fragmentQuizzleHome" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_QuizzleShop"
+            app:destination="@id/QuizzleShop" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzleWoodgame1"
+        android:name="com.example.quizapp.section8.game.QuizzleWoodgame1"
+        android:label="QuizzleWoodgame1"
+        tools:layout="@layout/fragment_quizzle_woodgame1"/>
+    <fragment
+        android:id="@+id/quizzleWoodgame2"
+        android:name="com.example.quizapp.section8.game.QuizzleWoodgame2"
+        android:label="QuizzleWoodgame2"
+        tools:layout="@layout/fragment_quizzle_woodgame2"/>
+    <fragment
+        android:id="@+id/quizzleWoodgame3"
+        android:name="com.example.quizapp.section8.game.QuizzleWoodgame3"
+        android:label="QuizzleWoodgame3"
+        tools:layout="@layout/fragment_quizzle_woodgame3"/>
+
+    <fragment
+        android:label="fragment_quizzleWoodBonus"
+        android:name="com.example.quizapp.section10.QuizzleWoodBonus"
+        android:id="@+id/quizzleBonus"
+        tools:layout="@layout/fragment_quizzle_wood_bonus"/>
+
+    <fragment
+        android:label="fragment_quizzleWoodAwards"
+        android:name="com.example.quizapp.section9.progressAll"
+        android:id="@+id/quizzleWoodAwards"
+        tools:layout="@layout/fragment_quizzle_wood_awards"/>
+
+    <fragment
+        android:label="QuizzleVilleHome"
+        android:name="com.example.quizapp.section11.QuizzlevilleHome"
+        tools:layout="@layout/fragment_quizzleville_home"
+        android:id="@+id/fragmentQuizzleHome"/>
+
+    <fragment
+        android:label="QuizzleShop"
+        android:name="com.example.quizapp.section7.QuizzleWoodshop2"
+        android:id="@+id/QuizzleShop"
+        tools:layout="@layout/fragment_quizzle_woodshop2"/>
+</navigation>

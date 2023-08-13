@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menufragment.Feddback"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/pexels_prashant_gautam_3783385__1___1_">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/feedback_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-10dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        style="@style/myTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/have_your_say" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/green_button_background"
+android:layout_marginTop="7dp"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:drawableEndCompat="@drawable/baseline_arrow_drop_down_24"
+
+            android:inputType="none"
+            android:layout_marginHorizontal="50dp"
+            android:text="@string/subject"
+            android:background="@drawable/statistics_text_back"
+            style="@style/myTextStyle"
+            tools:ignore="LabelFor,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/textarea_field">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/type_your_message_here"
+            android:paddingStart="10dp"
+            android:gravity="top"
+            android:padding="10dp"
+            style="@style/myTextStyle"
+            android:textColor="#E76161"
+            android:textColorHint="#E76161"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/statistics_text_back"
+            tools:ignore="Autofill,RtlSymmetry" />
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:text = "@string/ok_"
+        style="@style/myTextStyle"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ok_button_background"/>
+
+
+</LinearLayout>
+</ScrollView>

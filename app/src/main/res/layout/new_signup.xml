@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding = "16dp"
+    android:scrollbars="vertical"
+    android:fillViewport="false"
+    android:background="@drawable/startup_backgroundxxhdpi"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="bottom|center"
+
+            android:paddingBottom="10dp"
+            android:src="@drawable/quizzle_logo_startup"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="-65dp"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:layout_gravity="center|top"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/signup_fullname_box"
+                android:layout_height="55dp"
+                android:letterSpacing=".02"
+                android:hint="Full Name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#638BF4"
+                android:textColorHint="#638BF4"
+                tools:ignore="RtlSymmetry" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:hint="DOB"
+                android:textSize="25sp"
+                android:letterSpacing=".02"
+                android:textColorHint="#778AF3"
+                android:textColor="#638BF4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/signup_fullname_box"
+                android:layout_height="55dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:hint="Your Email or Phone"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:letterSpacing=".02"
+
+                android:textColor="#638BF4"
+                android:textColorHint="#638BF4"
+                android:background="@drawable/signup_fullname_box"
+                android:layout_height="55dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/signup_fullname_box"
+                android:layout_height="55dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:letterSpacing=".02"
+
+                android:textColor="#638BF4"
+                android:textColorHint="#638BF4"
+                android:hint="Create PassWord"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sign_up_bonus_image"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/signup_button"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remember_me_checkbox"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:text = "Check to agree to the Terms  Privacy Policy"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

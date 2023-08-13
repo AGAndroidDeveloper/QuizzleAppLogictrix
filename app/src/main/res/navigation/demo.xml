@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@+id/quizzleWoodtreefrag">
+    <fragment
+        android:id="@+id/quizzleHome"
+        android:name="com.quizzle.quizzle.section10.QuizzleHomeBonus"
+        android:label="fragment_quizzle_home">
+        <action
+            android:id="@+id/action_quizzleHome_to_quizzleShop"
+            app:destination="@+id/quizzleShop" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizzleShop"
+        android:name="com.quizzle.quizzle.QuizzleShop"
+        android:label="fragment_quizzle_shop" />
+    <fragment
+        android:id="@+id/quizzlevilleHome"
+        android:name="com.quizzle.quizzle.QuizzlevilleHome"
+        android:label="fragment_quizzleville_home" />
+    <fragment
+        android:id="@+id/quizzle_landia_map"
+        android:name="com.quizzle.quizzle.Quizzle_landia_map"
+        android:label="fragment_quizzle_landia_map" />
+    <fragment
+        android:id="@+id/quizzleWoodgame1"
+        android:name="com.quizzle.quizzle.section8.QuizzleWoodgame1"
+        android:label="fragment_quizzle_woodgame1" />
+    <fragment
+        android:id="@+id/quizzleWoodgame2"
+        android:name="com.quizzle.quizzle.section8.QuizzleWoodgame2"
+        android:label="fragment_quizzle_woodgame2" />
+    <fragment
+        android:id="@+id/quizzleWoodgame3"
+        android:name="com.quizzle.quizzle.section8.QuizzleWoodgame3"
+        android:label="fragment_quizzle_woodgame3" />
+    <fragment
+        android:id="@+id/quizzleWoodgame4"
+        android:name="com.quizzle.quizzle.section8.QuizzleWoodgame4"
+        android:label="fragment_quizzle_woodgame4" />
+    <fragment
+        android:id="@+id/quizzleWoodtreefrag"
+        android:name="com.quizzle.quizzle.section8.QuizzleWoodtreefrag"
+        android:label="fragment_quizzle_woodtreefrag">
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleShop2"
+            app:destination="@+id/quizzleShop2" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleHome"
+            app:destination="@+id/quizzleHome" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzlevilleHome"
+            app:destination="@+id/quizzlevilleHome" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_fragment_award_filter2"
+            app:destination="@+id/fragment_award_filter" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_fragment_award_filter3"
+            app:destination="@+id/fragment_award_filter" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodFruit"
+            app:destination="@+id/quizzleWoodgame4" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodTreasureGame"
+            app:destination="@+id/quizzleWoodgame1" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodDiceGame"
+            app:destination="@+id/quizzleWoodgame2" />
+        <action
+            android:id="@+id/action_quizzleWoodtreefrag_to_quizzleWoodSpin"
+            app:destination="@+id/quizzleWoodgame3" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzleAwards"
+        android:name="com.quizzle.quizzle.section9.QuizzleAwards"
+        android:label="fragment_quizzle_awards" />
+    <fragment
+        android:id="@+id/progress_all2"
+        android:name="com.quizzle.quizzle.section9.progress_all"
+        android:label="fragment_progress_all" />
+    <fragment
+        android:id="@+id/quizzleShop2"
+        android:name="com.quizzle.quizzle.section7.QuizzleShop"
+        android:label="fragment_quizzle_shop2">
+        <action
+            android:id="@+id/action_quizzleShop2_to_quizzlewoodShop1"
+            app:destination="@+id/quizzlewoodShop1" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_award_filter"
+        android:name="com.quizzle.quizzle.section9.quizzle_awardsAll_14july"
+        android:label="fragment_quizzle_award_filter_system">
+        <action
+            android:id="@+id/action_fragment_award_filter_to_quizzleAwards"
+            app:destination="@+id/quizzleAwards" />
+        <action
+            android:id="@+id/action_fragment_award_filter_to_progress_all2"
+            app:destination="@+id/progress_all2" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzleWooddemo17july"
+        android:name="com.quizzle.quizzle.quizzleWooddemo17july"
+        android:label="fragment_quizzle_wooddemo17july" />
+    <fragment
+        android:id="@+id/quizzleWood"
+        android:name="com.quizzle.quizzle.QuizzleWood"
+        android:label="fragment_quizzle_wood" />
+    <fragment
+        android:id="@+id/quizzlewoodShop1"
+        android:name="com.quizzle.quizzle.section7.QuizzlewoodShop1"
+        android:label="fragment_quizzlewood_shop1" />
+</navigation>

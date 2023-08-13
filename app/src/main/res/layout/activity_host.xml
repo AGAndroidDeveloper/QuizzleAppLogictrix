@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/quizzlewood_bg_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@drawable/home_header"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:id="@+id/fragmentContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/new_navigation" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:background="@drawable/quizzle_home_bottom_footer_bg"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizzlewood_footer_button"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/awards"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizzleawards_footer_button"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/bonus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizzlebonus_footer_button"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quizzlehome_footer_button"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/shop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_shop"
+            android:layout_weight="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

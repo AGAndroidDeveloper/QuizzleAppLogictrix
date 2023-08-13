@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menufragment.news_event"
+    android:background="@drawable/pexels_prashant_gautam_3783385__1___1_"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp">
+
+ <androidx.appcompat.widget.AppCompatImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/news_event_title"
+     android:layout_gravity="center"
+     android:layout_marginBottom="-10dp"
+     />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_s_new_amp_coming_here"
+            style="@style/myTextStyle"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        app:strokeColor="@color/white"
+         app:cardBackgroundColor="#6AC56E">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/pirate_ship"
+    android:scaleType="fitXY"
+    tools:ignore="ContentDescription" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="@string/news_tittle_here"
+        android:layout_marginTop="10dp"
+        style="@style/myTextStyle"
+        android:background="@drawable/nicjname_background"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>
