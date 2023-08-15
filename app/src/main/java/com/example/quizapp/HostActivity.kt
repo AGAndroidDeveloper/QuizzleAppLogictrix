@@ -3,8 +3,11 @@ package com.example.quizapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.fragment.app.FragmentContainerView
 import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 
 class HostActivity : AppCompatActivity() {
     private var navController :NavController? = null
@@ -20,10 +23,9 @@ class HostActivity : AppCompatActivity() {
         awards = findViewById(R.id.awards)
         shop = findViewById(R.id.shop)
       home = findViewById(R.id.home)
-        navController = findNavController(R.id.fragmentContainerView)
-
-
-
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
 
         home!!.setOnClickListener {
             navController!!.navigate(R.id.action_quizzleWoodtreefrag_to_fragmentQuizzleHome)

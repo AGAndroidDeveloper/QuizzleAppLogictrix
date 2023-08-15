@@ -21,6 +21,7 @@ class Itemadapter(val context: Context, private val CurrencyList: ArrayList<Quiz
     class MYViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imageView: ImageView = view.findViewById(R.id.currencyImage)
         val currency: TextView =  view.findViewById(R.id.buyBtn)
+        val currencyMultiTimes :TextView = view.findViewById(R.id.timesCount)
 
 
     }
@@ -45,5 +46,7 @@ class Itemadapter(val context: Context, private val CurrencyList: ArrayList<Quiz
         Intrinsics.checkNotNullExpressionValue(quizzleCurrency, "CurrencyList[position]")
         holder.imageView.setImageResource(quizzleCurrency.quizzleshopQuizzles4)
         holder.currency.text = quizzleCurrency.s
+        holder.currencyMultiTimes.text = quizzleCurrency.a
+        
     }
 }

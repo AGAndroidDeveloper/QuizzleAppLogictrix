@@ -11,7 +11,7 @@ import android.widget.ListView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.quizapp.R
-import com.example.quizapp.dataModel.WinnerList
+import com.example.quizapp.dataModel.winnerList
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.NonDisposableHandle.parent
 import kotlin.jvm.internal.Intrinsics
@@ -25,15 +25,43 @@ private var listView :ListView? = null
 
         listView = view.findViewById(R.id.top100List)
 
-        val itemList: List<WinnerList> = arrayListOf(
+        val itemList: List<winnerList> = arrayListOf(
 
-                WinnerList("dan") ,WinnerList("dan"), WinnerList("dan"),
-                WinnerList("dan") ,WinnerList("dan"), WinnerList("dan"),
-                WinnerList("dan") ,WinnerList("dan"), WinnerList("dan"),
-                WinnerList("dan") ,WinnerList("dan"), WinnerList("dan")
-
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
+                winnerList("danTheDestroyer"),  winnerList("danTheDestroyer"),
 
         )
+
+
+
+
+        val arrayAdapter: ArrayAdapter<winnerList?> =
+            object : ArrayAdapter<winnerList?>( requireContext(),0,itemList) {
+                // from class: com.quizzle.quizzle.section10.QuizzleHomeBonus$onCreateView$adapter$1
+                // android.widget.ArrayAdapter, android.widget.Adapter
+                override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                    val view2: View = convertView
+                        ?: LayoutInflater.from(context)
+                            .inflate(R.layout.top100_quizzler_list, parent, false)
+                  //  val findViewById = view2.findViewById<View>()
+
+                   // val deviceNameTextView = findViewById as TextView
+                    val deviceData = itemList[position]
+                  //  deviceNameTextView.text = deviceData?.name
+
+                    return view2
+                }
+            }
+        val listView = listView
+
+        listView!!.adapter = arrayAdapter as ListAdapter
 
 
 
@@ -62,7 +90,9 @@ private var listView :ListView? = null
 //        }
 
 
-        return view    }
+        return view
+
+    }
 
 
 }

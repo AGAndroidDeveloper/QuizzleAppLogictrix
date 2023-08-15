@@ -78,5 +78,14 @@
         android:label="QuizzleShop"
         android:name="com.example.quizapp.section7.QuizzleWoodshop2"
         android:id="@+id/QuizzleShop"
-        tools:layout="@layout/fragment_quizzle_woodshop2"/>
+        tools:layout="@layout/fragment_quizzle_woodshop2">
+        <action
+            android:id="@+id/action_QuizzleShop_to_quizzleCurrencyShop"
+            app:destination="@id/quizzleCurrencyShop" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizzleCurrencyShop"
+        android:name="com.example.quizapp.section7.QuizzleCurrencyShop"
+        android:label="fragment_quizzle_currency_shop"
+        tools:layout="@layout/fragment_quizzle_currency_shop" />
 </navigation>

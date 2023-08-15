@@ -9,12 +9,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/HrecyclerView"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:listitem="@layout/quizzle_currency_item"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="0"
-        app:layout_constraintTop_toTopOf="0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

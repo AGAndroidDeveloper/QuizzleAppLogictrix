@@ -72,7 +72,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/quizzleawards_filter_button"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/a" />
 
     <LinearLayout
@@ -82,7 +82,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/quizzleawards_dropdown"
-        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/a">
 
@@ -163,7 +163,7 @@
         android:orientation="vertical"
         android:scrollbars="vertical"
         android:visibility="gone"
-        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e" />
 
     <ListView
@@ -175,7 +175,7 @@
         android:layout_marginRight="20dp"
         android:orientation="vertical"
         android:scrollbars="vertical"
-        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e"
         tools:listitem="@layout/top100_quizzler_list" />
 
@@ -189,7 +189,7 @@
         android:orientation="vertical"
         android:scrollbars="vertical"
         android:visibility="gone"
-        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e"
         tools:listitem="@layout/top100_quizzler_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>

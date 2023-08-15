@@ -20,9 +20,9 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="0"
-        app:layout_constraintStart_toStartOf="0"
-        app:layout_constraintTop_toTopOf="0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
@@ -36,9 +36,9 @@
         android:text="Make your Quizzling all piraty with this exculisive pirate hat "
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <LinearLayout
@@ -51,9 +51,9 @@
         android:paddingStart="45dp"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <TextView
@@ -88,9 +88,9 @@
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="100dp"
@@ -98,8 +98,8 @@
             android:layout_marginBottom="-40dp"
             android:scaleType="fitXY"
             android:src="@drawable/go_back_wooden_sign"
-            app:layout_constraintBottom_toBottomOf="0"
-            app:layout_constraintStart_toStartOf="0" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:layout_width="150dp"
@@ -117,9 +117,9 @@
         android:layout_marginBottom="25dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="0"
-        app:layout_constraintEnd_toEndOf="0"
-        app:layout_constraintStart_toStartOf="0">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"

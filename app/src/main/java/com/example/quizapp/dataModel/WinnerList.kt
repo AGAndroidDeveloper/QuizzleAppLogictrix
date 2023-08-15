@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics
 
 
 
-data class WinnerList(val name :String) {
+data class winnerList(val name :String) {
 
 
 
