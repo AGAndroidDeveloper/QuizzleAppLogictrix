@@ -1,5 +1,0 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#FFFFFF" /> <!-- Set the thumb color to white -->
-    <corners android:radius="20dp" /> <!-- Set the radius to achieve the round shape (adjust the value as needed) -->
-    <size android:width="40dp" android:height="40dp" /> <!-- Set the size of the thumb (adjust the values as needed) -->
-</shape>

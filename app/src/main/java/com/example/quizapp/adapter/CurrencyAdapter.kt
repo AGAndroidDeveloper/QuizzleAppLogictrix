@@ -10,10 +10,13 @@ import com.example.quizapp.R
 import com.example.quizapp.dataModel.QuizzleCurrency
 
 
-class adapter(val context: Context, private val QuizzleCurrencyList: ArrayList<ArrayList<QuizzleCurrency>>) :
+class adapter(val context: Context, private val QuizzleCurrencyList: ArrayList<ArrayList<QuizzleCurrency>>,
+              private val itemClickListener: OnItemClickListener) :
     RecyclerView.Adapter<adapter.MyViewHolder>() {
 
-
+    interface OnItemClickListener {
+        fun onChildItemClick(item: QuizzleCurrency)
+    }
 
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val mrecyclerView: RecyclerView = view.findViewById(R.id.HrecyclerView)
@@ -30,7 +33,7 @@ class adapter(val context: Context, private val QuizzleCurrencyList: ArrayList<A
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val arrayList: ArrayList<QuizzleCurrency> = QuizzleCurrencyList[position]
 
-        holder.mrecyclerView.adapter = Itemadapter(context,arrayList)
+        holder.mrecyclerView.adapter = Itemadapter(context,arrayList,itemClickListener,)
     }
 
 

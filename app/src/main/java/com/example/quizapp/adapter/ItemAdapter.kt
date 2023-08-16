@@ -7,15 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizapp.R
 import com.example.quizapp.dataModel.QuizzleCurrency
 import kotlin.jvm.internal.Intrinsics
 
 
-class Itemadapter(val context: Context, private val CurrencyList: ArrayList<QuizzleCurrency>) :
+class Itemadapter(val context: Context, private val CurrencyList: ArrayList<QuizzleCurrency>, private val listener: OnItemClickListener) :
     RecyclerView.Adapter<Itemadapter.MYViewHolder>() {
 
+
+    interface OnItemClickListener {
+        fun onItemClick(item: QuizzleCurrency)
+    }
 
 
     class MYViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -26,10 +31,8 @@ class Itemadapter(val context: Context, private val CurrencyList: ArrayList<Quiz
 
     }
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MYViewHolder {
-        Intrinsics.checkNotNullParameter(parent, "parent")
+
         val view: View =
             LayoutInflater.from(context).inflate(R.layout.quizzle_currency_item, parent, false)
 
@@ -41,12 +44,18 @@ class Itemadapter(val context: Context, private val CurrencyList: ArrayList<Quiz
     }
 
     override fun onBindViewHolder(holder: MYViewHolder, position: Int) {
-        Intrinsics.checkNotNullParameter(holder, "holder")
         val quizzleCurrency = CurrencyList[position]
-        Intrinsics.checkNotNullExpressionValue(quizzleCurrency, "CurrencyList[position]")
         holder.imageView.setImageResource(quizzleCurrency.quizzleshopQuizzles4)
         holder.currency.text = quizzleCurrency.s
         holder.currencyMultiTimes.text = quizzleCurrency.a
-        
+
+        holder.itemView.setOnClickListener {
+            listener.onItemClick(quizzleCurrency)
+            Toast.makeText(context, quizzleCurrency.s, Toast.LENGTH_SHORT).show()
+        }
+
+
+
+
     }
 }

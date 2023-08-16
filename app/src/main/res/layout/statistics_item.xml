@@ -42,7 +42,6 @@ android:paddingEnd="10dp"
 
 
         <TextView
-            android:id="@+id/totalNumber"
             android:layout_width="wrap_content"
             style="@style/myTextStyle"
             android:layout_height="wrap_content"

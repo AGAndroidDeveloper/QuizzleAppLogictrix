@@ -98,7 +98,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear_layout_images1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -177,7 +176,6 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:id="@+id/colorId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -189,7 +187,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/clothing"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -213,7 +210,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/propes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -225,7 +221,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/town"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

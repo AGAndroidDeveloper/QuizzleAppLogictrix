@@ -31,7 +31,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/bomb"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@+id/quizzlechesttittle"
@@ -41,7 +40,6 @@
         android:src="@drawable/quizzleshop_bomb_powerup" />
 
     <LinearLayout
-        android:id="@+id/quizzlechest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/quizzlechar1"
@@ -88,7 +86,6 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="76dp"

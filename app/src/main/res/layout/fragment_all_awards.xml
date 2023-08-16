@@ -117,7 +117,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout23"
         android:background="@drawable/quizzleawards_dropdown"
      android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -143,7 +142,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout33"
         android:background="@drawable/quizzleawards_dropdown"
          android:layout_width="match_parent"
         android:layout_height="wrap_content"

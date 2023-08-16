@@ -48,6 +48,8 @@ object returnCurrencyList {
                 QuizzleCurrency(R.drawable.quizzlemania_icon,"€4.99",""),
                 QuizzleCurrency(R.drawable.quizzlelandia_3dgraphic_land,"€4.99",""),
                 QuizzleCurrency(R.drawable.quizzleshop_quizzle_quest_unlock,"€4.99",""),
+ QuizzleCurrency(R.drawable.quizzleshop_quizzle_quest_unlock,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzle_quest_unlock,"€4.99","")
 
                 )
     }
@@ -71,6 +73,29 @@ object returnCurrencyList {
                 QuizzleCurrency(R.drawable.quizzleshop_star_earnx2,"€4.99",""),
                 QuizzleCurrency(R.drawable.quizzleshop_max_life_1,"€4.99",""),
                 QuizzleCurrency(R.drawable.feather_icon,"€4.99",""),
+
+                )
+    }
+
+
+ fun listOfQuizzleVille() :ArrayList<QuizzleCurrency>{
+
+
+        return arrayListOf(
+                QuizzleCurrency(R.drawable.crown_icon,"€4.99",""),
+                QuizzleCurrency(R.drawable.crown_icon,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_skip_powerup,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_bomb_powerup,"€4.99",""),
+
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_colour_1,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_colour_4,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_colour_2,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_colour_4,"€4.99",""),
+
+                QuizzleCurrency(R.drawable.quizzleshop_max_life_1,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_prop_2,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_home_2,"€4.99",""),
+                QuizzleCurrency(R.drawable.quizzleshop_quizzling_home_1,"€4.99",""),
 
                 )
     }

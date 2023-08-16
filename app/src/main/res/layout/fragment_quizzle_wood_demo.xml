@@ -2,8 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/quizzlewood_bg_home" android:layout_width="match_parent" android:layout_height="match_parent">
     <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/textView6" android:background="@drawable/quizzleing_name_level" android:layout_width="match_parent" android:layout_height="40dp" android:text="Enchanted Tree" android:layout_alignParentTop="true" android:layout_marginStart="-5dp" android:layout_marginEnd="5dp" android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>
     <LinearLayout android:orientation="vertical" android:id="@+id/fruitLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="72dp" android:layout_below="@+id/textView6" android:layout_marginStart="10dp" android:layout_alignParentStart="true">
-        <ImageView android:id="@+id/leaf_cost_fruit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/__leaf_cost2" android:layout_marginStart="34dp"/>
-        <ImageView android:id="@+id/fruit_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quizzlewood_quizzlefruit_icon"/>
+        <ImageView
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/__leaf_cost2" android:layout_marginStart="34dp"/>
+        <ImageView
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quizzlewood_quizzlefruit_icon"/>
         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-13dp" android:src="@drawable/quizzle_fruit_tree_sign"/>
     </LinearLayout>
     <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/spinLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="72dp" android:layout_below="@+id/textView6" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">

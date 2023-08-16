@@ -157,7 +157,6 @@
 
 
     <ListView
-        android:id="@+id/all_awards"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
@@ -180,7 +179,6 @@
         tools:listitem="@layout/top100_quizzler_list" />
 
     <ListView
-        android:id="@+id/progressAll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="20dp"
